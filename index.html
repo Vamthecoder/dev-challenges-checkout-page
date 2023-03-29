@@ -1,13 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Crimson+Pro:wght@200&family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Checkout Page</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>Checkout</header>
+    <main>
+      <section class="shopping-cart">
+        <div class="just-for-flex">
+          <div><img src="photo1.png" alt="bag" /></div>
+          <div>
+            <p class="product">Vintage Backbag</p>
+            <p class="mop">$54.99</p>
+            <p class="mrp">$94.99</p>
+            <div class="quantity-selector">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="just-for-flex">
+          <div><img src="photo2.png" alt="shoes" /></div>
+          <div>
+            <p class="product">Levi Shoes</p>
+            <p class="mop">$74.99</p>
+            <p class="mrp">#124.99</p>
+            <div class="quantity-selector">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="order-value">
+          <hr />
+          <p><span>Shipping</span> <span>$19</span></p>
+          <hr />
+          <p><span>Total</span> <span>$148.98</span></p>
+        </div>
+      </section>
+      <section class="shipping-details-container">
+        <form action="#">
+          <div class="contact-information">
+            <p>Contact Information</p>
+            <fieldset>
+              <figcaption>E-mail</figcaption>
+              <label for="useremail"></label
+              ><span class="material-symbols-outlined"> mail </span
+              ><input
+                type="email"
+                name="shipping-details"
+                id="useremail"
+                placeholder="Enter your email..."
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <figcaption>Phone</figcaption>
+              <label for="usernumber"></label
+              ><span class="material-symbols-outlined"> call </span
+              ><input
+                type="text"
+                name="shipping-details"
+                id="usernumber"
+                placeholder="Enter your phone.."
+                required
+              />
+            </fieldset>
+          </div>
+          <div class="shipping-address">
+            <p>Shipping address</p>
+            <fieldset>
+              <figcaption>Full name</figcaption>
+              <label for="username"></label
+              ><span class="material-symbols-outlined"> account_circle </span
+              ><input
+                type="text"
+                name="shipping-details"
+                id="username"
+                value="Rodney Cotton"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <figcaption>Address</figcaption>
+              <label for="address"></label
+              ><span class="material-symbols-outlined"> home </span
+              ><input
+                type="text"
+                name="shipping-details"
+                id="address"
+                placeholder="Your address.."
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <figcaption>City</figcaption>
+              <label for="city"></label
+              ><span class="material-symbols-outlined"> location_city </span
+              ><input
+                type="text"
+                name="shipping-details"
+                id="city"
+                placeholder="Your city.."
+                required
+              />
+            </fieldset>
+            <div class="country-postal-flex">
+              <fieldset>
+                <figcaption>Country</figcaption>
+                <span class="material-symbols-outlined"> public </span
+                ><select
+                  name="shipping-details"
+                  id="country-select"
+                  required
+                >
+                  <option value="your-country">Your country..</option>
+                  <option value="india">India</option>
+                  <option value="america">America</option>
+                  <option value="germany">Germany</option>
+                  <option value="china">China</option>
+                  <option value="egypt">Egypt</option>
+                  <option value="spain">spain</option>
+                  <option value="canada">Canada</option>
+                  <option value="france">France</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <figcaption>Postal code</figcaption>
+                <label for="postal"></label
+                ><span class="material-symbols-outlined">
+                  markunread_mailbox </span
+                ><input
+                  type="text"
+                  name="shipping-details"
+                  id="postal"
+                  placeholder="Your postal code.."
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="save-information">
+              <input
+                type="checkbox"
+                name="save-information"
+                id="save-information"
+                required
+              /><label for="save-information" class="figcaption"
+                >Save this information for next time</label
+              >
+            </div>
+          </div>
+          <button class="btn">Continue</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        created by
+        <a href="https://github.com/Vamthecoder" target="_blank"
+          ><strong>amit</strong></a
+        >
+        -
+        <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,3 +1,263 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Montserrat", serif;
+}
+
+header {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 10px;
+  color: #4e5150;
+}
+
+.contact-information,
+.shipping-address {
+  margin-top: 40px;
+}
+
+fieldset {
+  text-decoration: none;
+  border: none;
+}
+
+figcaption,
+.figcaption {
+  font-size: 12px;
+  color: #4f4f4f;
+  margin-bottom: -22px;
+}
+
+*[name="shipping-details"] {
+  width: 465px;
+  height: 55px;
+  color: black;
+  background-color: white;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding-left: 60px;
+  margin-top: 0;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 45px;
+  left: 20px;
+  font-variation-settings: "FILL" 1;
+}
+
+#country-select, #postal {
+    width: 220px;
+}
+
+.country-postal-flex {
+  display: flex;
+  width: 200px;
+}
+
+.shipping-address p,
+.contact-information p,
+.save-information {
+  margin-left: 12px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 10px 20px 5px;
+  width: 21px;
+  height: 16px;
+}
+
+.btn {
+  width: 166px;
+  height: 54px;
+  background-color: #f2994a;
+  border-radius: 12px;
+  color: white;
+  float: right;
+  clear: both;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #f2994a;
+}
+
+#username {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Starts Side floating wall of shopping CART */
+
+.shopping-cart {
+  width: 380px;
+  height: 535px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.shopping-cart img {
+  width: 130px;
+  height: 135px;
+  border-radius: 20px;
+  object-fit: contain;
+  margin-top: 18px;
+}
+
+.product {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e5150;
+  text-align: left;
+  width: 150px;
+  margin-top: 25px;
+}
+
+.mrp {
+  font-size: 12px;
+  color: #435150;
+  text-decoration: line-through;
+  font-weight: 600;
+  position: relative;
+  top: -41px;
+  right: -22px;
+}
+
+.mop {
+  font-size: 16px;
+  color: #f2994a;
+  font-weight: 600;
+  position: relative;
+  top: -7px;
+  left: -46px;
+}
+
+.quantity-selector {
+  width: 130px;
+  height: 52px;
+  border: 2px solid #82828282;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.just-for-flex {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  /* height: 170px; */
+}
+
+.quantity-selector button {
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  background: #e0e0e0e;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  color: #828282;
+}
+
+.order-value {
+  margin-top: 100px;
+}
+
+hr {
+  width: 80%;
+  color: #bdbdbd;
+}
+
+.order-value p span:nth-child(1) {
+  margin-right: 200px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 200px;
+  color: #0007;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0007;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "one two";
+    gap: 9rem;
+  }
+
+  .shipping-details-container {
+    grid-area: one;
+  }
+
+  .shopping-cart {
+    grid-area: two;
+  }
+}
+
+
+@media (max-width: 850px) {
+    body {
+        width: 70%;
+    }
+
+    main {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "one two";
+    gap: 9rem;
+  }
+
+  .shipping-details-container {
+    grid-area: one;
+    grid-row: 2/3;
+  }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        width: 93%;
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+    .shopping-cart {
+        margin-top: 20px;
+    }
+
+    .contact-information {
+        margin-top: -50px;
+    }
+
+    *[name="shipping-details"] {
+        width: 350px;
+        height: 45px;
+        padding-left: 40px;
+    }    
+    
+    #country-select, #postal {
+        width: 165px;
+    }
+
+    .material-symbols-outlined {
+     top: 38px;
+     left: 10px;   
+    }
+
+    footer {
+        margin-top: 80px;
+    }
 }
